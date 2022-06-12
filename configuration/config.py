@@ -10,7 +10,8 @@ class Config:
     PROJECT_PATH = PROJECT_PATH
     MELTED_TRENDS_FOR_REVIEW_PATH = f'{PROJECT_PATH}/data_layer/data_files/melted_trends_for_review_2.csv'
     FOR_REVIEW_FEATURES_PATH = f'{PROJECT_PATH}/data_layer/data_files/for_review_features.csv'
-    RAW_DATA_GCS_PATH = f'gs://augury-dataset-research/semi-supervised-discovery/raw-data/{EXECUTION_UNIQUE_SIG}/'
+    GCS_BUCKET = f'augury-datasets-research'
+    RAW_DATA_GCS_PATH = f'semi-supervised-discovery/raw-data/{EXECUTION_UNIQUE_SIG}'
 
     FEATURES_LIST = [
         'machine_id',
