@@ -9,3 +9,5 @@
 # torchaudio
 # joblib
 # pandas
+# google
+# tqdm

@@ -11,7 +11,9 @@ class Config:
     MELTED_TRENDS_FOR_REVIEW_PATH = f'{PROJECT_PATH}/data_layer/data_files/melted_trends_for_review_2.csv'
     FOR_REVIEW_FEATURES_PATH = f'{PROJECT_PATH}/data_layer/data_files/for_review_features.csv'
     GCS_BUCKET = f'augury-datasets-research'
-    RAW_DATA_GCS_PATH = f'semi-supervised-discovery/raw-data/{EXECUTION_UNIQUE_SIG}'
+    RAW_DATA_GCS_PATH = f'semi-supervised-discovery/raw-data'
+
+    EXECUTION_UNIQUE_SIG = None
 
     FEATURES_LIST = [
         'machine_id',
@@ -30,5 +32,5 @@ class Config:
         'impact_p2p_median',
     ]
 
-    def __init__(self):
-        pass
+    def __init__(self, unique_sig=EXECUTION_UNIQUE_SIG):
+        self.__class__.EXECUTION_UNIQUE_SIG = unique_sig
