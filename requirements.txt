@@ -1,0 +1,10 @@
+# git+https://github.com/augurysys/feature-store.git@master
+adlfs
+pyarrow
+gcsfs
+redis
+PyYAML
+torch
+torchvision
+torchaudio
+joblib
