@@ -1,8 +1,8 @@
 import datetime
 
 import pandas as pd
-from .feature_store.feature_store_client import FeatureStoreClient
-from .feature_store.models.conditions import create_select_condition
+from ...feature_store.feature_store_client import FeatureStoreClient
+from ...feature_store.models.conditions import create_select_condition
 from joblib import Parallel, delayed
 
 from configuration.config import Config
